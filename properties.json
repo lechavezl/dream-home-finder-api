@@ -1,0 +1,32 @@
+[
+    {
+      "title": "Spacious Modern Apartment",
+      "description": "A beautiful and spacious apartment with modern amenities.",
+      "price": 200000,
+      "location": "123 Main St, Cityville",
+      "bedrooms": 3,
+      "bathrooms": 2,
+      "status": "available",
+      "realtorId": "101"
+    },
+    {
+      "title": "Cozy Suburban House",
+      "description": "A cozy house in a peaceful suburban neighborhood.",
+      "price": 300000,
+      "location": "456 Oak Dr, Suburbia",
+      "bedrooms": 4,
+      "bathrooms": 2.5,
+      "status": "available",
+      "realtorId": "102"
+    },
+    {
+      "title": "Luxurious Beachfront Villa",
+      "description": "A luxurious villa with a stunning view of the beach.",
+      "price": 1000000,
+      "location": "789 Ocean Ave, Beach City",
+      "bedrooms": 5,
+      "bathrooms": 4,
+      "status": "available",
+      "realtorId": "103"
+    }
+]
