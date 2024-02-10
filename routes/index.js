@@ -6,7 +6,12 @@ const passport = require('passport');
 
 //Properties Route
 router.use('/properties', require('./properties'))
-
+//Realtor Route
+router.use('/realtors', require('./realtors'))
+//User Route
+router.use('/users', require('./users'))
+//Favorites Route
+router.use('/favorites', require('./favorites'))
 
 // Swagger routes
 router.use('/api-docs', swaggerUi.serve);
