@@ -1,0 +1,14 @@
+[
+    {
+      "userId": "user123",
+      "propertyId": "property456"
+    },
+    {
+      "userId": "user789",
+      "propertyId": "property101"
+    },
+    {
+      "userId": "user321",
+      "propertyId": "property654"
+    }
+]

@@ -1,0 +1,20 @@
+[
+    {
+      "name": "John",
+      "lastname": "Doe",
+      "email": "johndoe@example.com",
+      "realtorId": "RL12345"
+    },
+    {
+      "name": "Jane",
+      "lastname": "Smith",
+      "email": "janesmith@example.com",
+      "realtorId": "RL67890"
+    },
+    {
+      "name": "Michael",
+      "lastname": "Johnson",
+      "email": "michaeljohnson@example.com",
+      "realtorId": "RL54321"
+    }
+  ]
