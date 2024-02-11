@@ -579,13 +579,10 @@
             "schema": {
               "type": "object",
               "properties": {
-                "name": {
+                "userId": {
                   "example": "any"
                 },
-                "lastname": {
-                  "example": "any"
-                },
-                "email": {
+                "propertyId": {
                   "example": "any"
                 }
               }
@@ -652,13 +649,10 @@
             "schema": {
               "type": "object",
               "properties": {
-                "name": {
+                "userId": {
                   "example": "any"
                 },
-                "lastname": {
-                  "example": "any"
-                },
-                "email": {
+                "propertyId": {
                   "example": "any"
                 }
               }
