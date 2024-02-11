@@ -62,11 +62,10 @@ const getSingle = async (req, res) => {
 const createRealtor = async (req, res) => {
   //#swagger.tags=['Realtor']
   const realtor = {
-    title: req.body.title,
-    description: req.body.description,
-    price: req.body.price,
-    
-    realtorId: req.body.realtorId,
+    name: req.body.name,
+    lastname: req.body.lastname,
+    email: req.body.email,
+    realtorlicenseId: req.body.realtorlicenseId,
     
   };
   const response = await mongodb
@@ -90,14 +89,10 @@ const updateRealtor = async (req, res) => {
   }
   const realtorsId = new ObjectId(req.params.id);
   const realtor = {
-    title: req.body.title,
-    description: req.body.description,
-    price: req.body.price,
-    location: req.body.location,
-    bedrooms: req.body.bedrooms,
-    bathrooms: req.body.bathrooms,
-    status: req.body.status,
-    realtorId: req.body.realtorId,
+    name: req.body.name,
+    lastname: req.body.lastname,
+    email: req.body.email,
+    realtorlicenseId: req.body.realtorlicenseId,
   };
   const response = await mongodb
     .getDatabase()
