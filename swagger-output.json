@@ -552,7 +552,7 @@
     "/favorites/": {
       "get": {
         "tags": [
-          "Users"
+          "Favorites"
         ],
         "description": "",
         "produces": [
@@ -569,7 +569,7 @@
       },
       "post": {
         "tags": [
-          "Users"
+          "Favorites"
         ],
         "description": "",
         "parameters": [
@@ -605,7 +605,7 @@
     "/favorites/{id}": {
       "get": {
         "tags": [
-          "Users"
+          "Favorites"
         ],
         "description": "",
         "produces": [
@@ -636,7 +636,7 @@
       },
       "put": {
         "tags": [
-          "Users"
+          "Favorites"
         ],
         "description": "",
         "parameters": [
@@ -679,7 +679,7 @@
       },
       "delete": {
         "tags": [
-          "Users"
+          "Favorites"
         ],
         "description": "",
         "parameters": [
