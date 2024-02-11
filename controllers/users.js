@@ -62,11 +62,10 @@ const getSingle = async (req, res) => {
 const createUser = async (req, res) => {
   //#swagger.tags=['Users']
   const user = {
-    title: req.body.title,
-    description: req.body.description,
-    price: req.body.price,
+    name: req.body.name,
+    lastname: req.body.lastname,
+    email: req.body.email,   
     
-    userId: req.body.userId,
     
   };
   const response = await mongodb
@@ -90,10 +89,9 @@ const updateUser = async (req, res) => {
   }
   const usersId = new ObjectId(req.params.id);
   const user = {
-    title: req.body.title,
-    description: req.body.description,
- 
-    userId: req.body.userId,
+    name: req.body.name,
+    lastname: req.body.lastname,
+    email: req.body.email,
   };
   const response = await mongodb
     .getDatabase()

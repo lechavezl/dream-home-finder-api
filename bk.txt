@@ -271,16 +271,16 @@
             "schema": {
               "type": "object",
               "properties": {
-                "name": {
+                "title": {
                   "example": "any"
                 },
-                "lastname": {
+                "description": {
                   "example": "any"
                 },
-                "email": {
+                "price": {
                   "example": "any"
                 },
-                "realtorlicenseId": {
+                "realtorId": {
                   "example": "any"
                 }
               }
@@ -347,16 +347,28 @@
             "schema": {
               "type": "object",
               "properties": {
-                "name": {
+                "title": {
                   "example": "any"
                 },
-                "lastname": {
+                "description": {
                   "example": "any"
                 },
-                "email": {
+                "price": {
                   "example": "any"
                 },
-                "realtorlicenseId": {
+                "location": {
+                  "example": "any"
+                },
+                "bedrooms": {
+                  "example": "any"
+                },
+                "bathrooms": {
+                  "example": "any"
+                },
+                "status": {
+                  "example": "any"
+                },
+                "realtorId": {
                   "example": "any"
                 }
               }
@@ -428,13 +440,16 @@
             "schema": {
               "type": "object",
               "properties": {
-                "name": {
+                "title": {
                   "example": "any"
                 },
-                "lastname": {
+                "description": {
                   "example": "any"
                 },
-                "email": {
+                "price": {
+                  "example": "any"
+                },
+                "userId": {
                   "example": "any"
                 }
               }
@@ -501,13 +516,13 @@
             "schema": {
               "type": "object",
               "properties": {
-                "name": {
+                "title": {
                   "example": "any"
                 },
-                "lastname": {
+                "description": {
                   "example": "any"
                 },
-                "email": {
+                "userId": {
                   "example": "any"
                 }
               }
@@ -552,7 +567,7 @@
     "/favorites/": {
       "get": {
         "tags": [
-          "Users"
+          "Favorites"
         ],
         "description": "",
         "produces": [
@@ -569,7 +584,7 @@
       },
       "post": {
         "tags": [
-          "Users"
+          "Favorites"
         ],
         "description": "",
         "parameters": [
@@ -579,13 +594,16 @@
             "schema": {
               "type": "object",
               "properties": {
-                "name": {
+                "title": {
                   "example": "any"
                 },
-                "lastname": {
+                "description": {
                   "example": "any"
                 },
-                "email": {
+                "price": {
+                  "example": "any"
+                },
+                "userId": {
                   "example": "any"
                 }
               }
@@ -605,7 +623,7 @@
     "/favorites/{id}": {
       "get": {
         "tags": [
-          "Users"
+          "Favorites"
         ],
         "description": "",
         "produces": [
@@ -636,7 +654,7 @@
       },
       "put": {
         "tags": [
-          "Users"
+          "Favorites"
         ],
         "description": "",
         "parameters": [
@@ -652,13 +670,13 @@
             "schema": {
               "type": "object",
               "properties": {
-                "name": {
+                "title": {
                   "example": "any"
                 },
-                "lastname": {
+                "description": {
                   "example": "any"
                 },
-                "email": {
+                "userId": {
                   "example": "any"
                 }
               }
@@ -679,7 +697,7 @@
       },
       "delete": {
         "tags": [
-          "Users"
+          "Favorites"
         ],
         "description": "",
         "parameters": [

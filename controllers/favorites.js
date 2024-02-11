@@ -62,11 +62,9 @@ const getSingle = async (req, res) => {
 const createFavorite = async (req, res) => {
   //#swagger.tags=['Favorites']
   const favorite = {
-    title: req.body.title,
-    description: req.body.description,
-    price: req.body.price,
-    
-    favoriteId: req.body.favoriteId,
+    name: req.body.name,
+    lastname: req.body.lastname,
+    email: req.body.email,
     
   };
   const response = await mongodb
@@ -90,10 +88,9 @@ const updateFavorite = async (req, res) => {
   }
   const favoritesId = new ObjectId(req.params.id);
   const favorite = {
-    title: req.body.title,
-    description: req.body.description,
- 
-    favoriteId: req.body.favoriteId,
+    name: req.body.name,
+    lastname: req.body.lastname,
+    email: req.body.email,
   };
   const response = await mongodb
     .getDatabase()
