@@ -2,15 +2,15 @@ const express = require('express');
 const router = express.Router();
 
 const propertiesController = require('../controllers/users');
-// const validation = require('../middleware/validate');
-// const { } = require('../middleware/authenticate');
+const { isAuthenticated } = require('../utilities/authenticate');
+
 
 router.get('/', propertiesController.getAll);
 router.get('/:id', propertiesController.getSingle);
 
-router.post('/', propertiesController.createUser);
+router.post('/', isAuthenticated,propertiesController.createUser);
 
-router.put('/:id', propertiesController.updateUser);
+router.put('/:id', isAuthenticated,propertiesController.updateUser);
 
-router.delete('/:id', propertiesController.deleteUser);
+router.delete('/:id', isAuthenticated,propertiesController.deleteUser);
 module.exports = router;

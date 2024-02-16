@@ -2,15 +2,15 @@ const express = require('express');
 const router = express.Router();
 
 const propertiesController = require('../controllers/favorites');
-// const validation = require('../middleware/validate');
-// const { } = require('../middleware/authenticate');
+const { isAuthenticated } = require('../utilities/authenticate');
+
 
 router.get('/', propertiesController.getAll);
 router.get('/:id', propertiesController.getSingle);
 
-router.post('/', propertiesController.createFavorite);
+router.post('/', isAuthenticated,propertiesController.createFavorite);
 
-router.put('/:id', propertiesController.updateFavorite);
+router.put('/:id', isAuthenticated,propertiesController.updateFavorite);
 
-router.delete('/:id', propertiesController.deleteFavorite);
+router.delete('/:id', isAuthenticated,propertiesController.deleteFavorite);
 module.exports = router;
