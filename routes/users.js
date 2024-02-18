@@ -3,7 +3,6 @@ const router = express.Router();
 const validateUsers = require("../utilities/users-validation");
 const propertiesController = require('../controllers/users');
 const { isAuthenticated } = require('../utilities/authenticate');
-
 // const validation = require('../middleware/validate');
 // const { } = require('../middleware/authenticate');
 
@@ -25,4 +24,5 @@ router.put('/:id',
 );
 
 router.delete('/:id', isAuthenticated, propertiesController.deleteUser);
+
 module.exports = router;
