@@ -65,7 +65,7 @@ const createRealtor = async (req, res) => {
     name: req.body.name,
     lastname: req.body.lastname,
     email: req.body.email,
-    realtorlicenseId: req.body.realtorlicenseId,
+    realtorId: req.body.realtorId,
     
   };
   const response = await mongodb
@@ -92,7 +92,7 @@ const updateRealtor = async (req, res) => {
     name: req.body.name,
     lastname: req.body.lastname,
     email: req.body.email,
-    realtorlicenseId: req.body.realtorlicenseId,
+    realtorId: req.body.realtorId,
   };
   const response = await mongodb
     .getDatabase()

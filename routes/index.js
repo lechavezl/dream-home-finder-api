@@ -23,12 +23,6 @@ router.get("/", (req, res) => {
     res.send("Dream Home Finder API");
 });
 
-// This is an example about how to use our different routes =>
-router.use("/properties", require("./testRoute")); // This route shows all the properties
-
-// Route to use all contacts routes
-// router.use("/tasks", utilities.handleErrors(require("./tasksRoutes")));
-
 // Authentication (OAuth) route (log in / logout)
 router.get("/login", passport.authenticate("github"), (req, res) => {
     //#swagger.tags=["OAuth"]

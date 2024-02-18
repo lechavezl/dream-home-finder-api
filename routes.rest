@@ -1,0 +1,45 @@
+// LOCALHOST TASKS ROUTES
+
+// PROPERTIES ROUTES
+
+### Get all tasks
+GET http://localhost:8080/properties
+
+### Request a single task
+GET http://localhost:8080/properties/
+
+### Create a new contact
+POST http://localhost:8080/properties HTTP/1.1
+content-type: application/json
+
+{
+    "title": "",
+      "description": "",
+      "price": ,
+      "location": "",
+      "bedrooms": ,
+      "bathrooms": ,
+      "status": "",
+      "realtorId": ""
+}
+
+### Update a task information
+PUT http://localhost:8080/properties/ HTTP/1.1
+content-Type: application/json
+
+{
+    "title": "",
+    "description": " is a new",
+    "status": "",
+    "due_date": "",
+    "created_at": "",
+    "assigned_user": "",
+    "priority": ""
+}
+
+### Delete task
+DELETE http://localhost:8080/properties/
+
+
+// REALTORS ROUTES
+
