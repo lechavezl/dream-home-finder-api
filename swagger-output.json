@@ -5,10 +5,10 @@
     "description": "Dream Home Finder API",
     "version": "1.0.0"
   },
-  "host": "localHost:8080",
+  "host": "dream-home-finder-api.onrender.com",
   "basePath": "/",
   "schemes": [
-    "http"
+    "https"
   ],
   "paths": {
     "/api-docs": {
