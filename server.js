@@ -11,7 +11,7 @@ const GithubStrategy = require("passport-github2").Strategy;
 const dotenv = require("dotenv").config();
 
 // PORTS
-const port = process.env.PORT || 8080;
+const port = process.env.PORT || 8081;
 
 /* 
 * NOTE: The bodyParser has to be BEFORE the require routes
@@ -96,3 +96,4 @@ mongodb.initDb((err) => {
         app.listen(port, () => {console.log(`Database is listening and node running on port ${port}`)});
     }
 });
+module.exports = app;
