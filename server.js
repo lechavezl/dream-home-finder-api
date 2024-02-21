@@ -11,7 +11,7 @@ const GithubStrategy = require("passport-github2").Strategy;
 const dotenv = require("dotenv").config();
 
 // PORTS
-const port = process.env.PORT || 8081;
+const port = process.env.PORT || 8080;
 
 /* 
 * NOTE: The bodyParser has to be BEFORE the require routes
@@ -57,12 +57,20 @@ passport.use(new GithubStrategy({
     callbackURL: process.env.CALLBACK_URL
 },
 function(acessToken, refreshToken, profile, done) {
+    profile.acessToken = acessToken;
+    console.log('Profile during authentication:', profile);
     return done(null, profile);
 }
 ));
 
 passport.serializeUser((user, done) => {
-    done(null, user);
+    const userData = {
+        id: user.id,
+        displayName: user.displayName,
+        email: user.email,  // Agrega esta línea
+        // Agrega otras propiedades según sea necesario
+    };
+    done(null, userData);
 });
 passport.deserializeUser((user, done) => {
     done(null, user);
