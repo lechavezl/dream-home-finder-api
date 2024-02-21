@@ -23,9 +23,23 @@ describe("GET /Users", () => {
 });
 
 describe("GET /users/:id", () => {
-  it("should return a product", async () => {
+  it("should return a user", async () => {
     const res = await request(app).get("/users/65c823ed7eeca0113225bee8");
     expect(res.statusCode).toBe(200);
     expect(res.body.name).toBe("Michael");
+  });
+});
+
+describe("POST /users", () => {
+  it("should create a user", async () => {
+    const res = await request(app).post("/users").send({
+      name: "Pepito",
+      lastname: "Perez",
+ 
+      email: "realtor@gmail.com"
+  
+    });
+    expect(res.statusCode).toBe(401);
+    
   });
 });
