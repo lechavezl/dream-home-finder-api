@@ -18,10 +18,10 @@ router.use('/api-docs', swaggerUi.serve);
 router.get('/api-docs', swaggerUi.setup(swaggerDocument));
 
 // Main route response
-router.get("/", (req, res) => {
-    //#swagger.tags=["Dream Home Finder API"]
-    res.send("Dream Home Finder API");
-});
+// router.get("/", (req, res) => {
+//     //#swagger.tags=["Dream Home Finder API"]
+//     res.send("Dream Home Finder API");
+// });
 
 // Authentication (OAuth) route (log in / logout)
 router.get("/login", passport.authenticate("github"), (req, res) => {
